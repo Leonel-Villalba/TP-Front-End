@@ -210,6 +210,7 @@ textarea{
 
 
 /* FOOTER */
+<<<<<<< HEAD
 
 .footer-ul{
     display: flex;
@@ -253,4 +254,43 @@ textarea{
         display: none;
     }
 }
+=======
+>>>>>>> 1b16b1cc35674da19c764044366eae70c39890d4
 
+.footer-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(29, 64, 84);
+    color: #ffff;
+    margin-bottom: 0;
+    padding: 32px;
+}
+.footer-ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+
+/* MEDIAQUERIES */
+
+@media only screen and (max-width: 767px) {
+    .ham {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50vh;
+        display: none;
+    }
+}
