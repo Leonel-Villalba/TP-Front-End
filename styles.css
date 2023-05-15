@@ -49,6 +49,29 @@ nav > a > div > img{
     margin-top: 16px;
 }
 
+.ham{
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+.ham span{
+    display: block;
+    background-color: #ffff;
+    height: 3px;
+    width: 28px;
+    margin: 5px auto;
+    border-radius: 2px;
+}
+
+.nav-items.activado{
+    display: flex;
+}
+
+
+
 /* HEADER */
 header{
     background-image: url(img/ba1.jpg);
@@ -113,6 +136,7 @@ header::after {
 
 .content-ubi{
     display: flex;
+    
 }
 
 .text-ubi{
@@ -191,4 +215,28 @@ textarea{
 .footer-ul li{
     list-style: none;
     cursor: pointer;
+}
+
+
+
+/* MEDIAQUERIES */
+
+@media only screen and (max-width: 767px) {
+    .ham {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 50vh;
+        display: none;
+    }
 }
