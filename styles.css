@@ -27,6 +27,10 @@ nav > a > div > img{
 .nav-items li:last-child {
     color: rgb(45, 165, 67);
 }
+.nav-items li a{
+    text-decoration: none;
+    color: rgb(45, 165, 67);
+}
 .nav-items li{
     margin-right: 12px;
     cursor: pointer;
@@ -442,4 +446,8 @@ textarea{
     border-radius: 5px;
     padding: 6px 0;
     color: #ffff;
+}
+
+.main-tickets{
+    height: 100vh;
 }

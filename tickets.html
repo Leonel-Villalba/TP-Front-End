@@ -35,7 +35,7 @@
         </button>
     </nav>
 
-    <main>
+    <main class="main-tickets">
         <div class="cards-tickets">
             <div class="card-t">
                 <h2>Estudiante</h2>
@@ -59,7 +59,8 @@
         <div class="container-form">
             <p>Venta</p>
             <h1>Valor de Ticket $200</h1>
-            <form class="form2">
+
+            <form class="form2" id="formularioTicket">
                 <div class="part-1">
                     <input type="text" id="nombre" placeholder="Nombre" required>
                     <input type="text" id="apellido" placeholder="Apellido" required>
@@ -76,7 +77,7 @@
                     
                     <div class="sub2-3">
                         <label>Categoría</label>
-                        <select id="porcDescuento">
+                        <select id="categoria">
                             <option value="opcion1">Estudiante</option>
                             <option value="opcion2">Trainee</option>
                             <option value="opcion3">Junior</option>
@@ -85,14 +86,19 @@
                 </div>
 
                 <div class="form-bottom">
-                    <p>Total a Pagar:</p>
+                    <p id="total">Total a Pagar:</p>
                 </div>
 
                 <div class="button-form">
-                    <button>Borrar</button>
-                    <button>Resumen</button>
+                    <button type="reset" >Borrar</button>
+                    <button type="submit" onclick="mostrarResumen()">Resumen</button>
                 </div>
             </form>
+            
+            <div id="contenedorResumen" class='text-center' style="display: none;">
+                <h5>Resumen del Formulario</h5>
+                <div id="resumen"></div>
+            </div>
         </div>
     </main>
 
